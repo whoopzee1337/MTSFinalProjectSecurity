@@ -1,4 +1,4 @@
-package com.example.mtsfinalprojectsecurity.model;
+package com.example.mtsfinalprojectsecurity.dto;
 
 import lombok.Data;
 

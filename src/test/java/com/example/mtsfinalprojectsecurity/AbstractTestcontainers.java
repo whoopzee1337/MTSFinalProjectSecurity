@@ -1,4 +1,4 @@
-package com.example.mtsfinalproject;
+package com.example.mtsfinalprojectsecurity;
 
 import liquibase.Liquibase;
 import liquibase.database.Database;
@@ -9,7 +9,6 @@ import liquibase.resource.ClassLoaderResourceAccessor;
 import org.junit.jupiter.api.BeforeAll;
 import org.springframework.boot.jdbc.DataSourceBuilder;
 import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.test.annotation.DirtiesContext;
 import org.springframework.test.context.DynamicPropertyRegistry;
 import org.springframework.test.context.DynamicPropertySource;
 import org.testcontainers.containers.PostgreSQLContainer;

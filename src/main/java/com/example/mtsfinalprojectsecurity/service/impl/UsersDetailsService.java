@@ -1,4 +1,4 @@
-package com.example.mtsfinalprojectsecurity.service;
+package com.example.mtsfinalprojectsecurity.service.impl;
 
 import com.example.mtsfinalprojectsecurity.entity.UserEntity;
 import com.example.mtsfinalprojectsecurity.repository.UserRepository;
@@ -19,8 +19,8 @@ public class UsersDetailsService implements UserDetailsService {
     @Override
     @Transactional
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-        UserEntity userEntity =  userRepository.findByUsername(username);
-        if (username == null){
+        UserEntity userEntity = userRepository.findBy(username);
+        if (username == null) {
             throw new UsernameNotFoundException("User not found");
         }
         return userEntity;

@@ -9,7 +9,10 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class DataWrapper {
+public class Response {
+
+    private DataResponse data;
+
     private ErrorResponse error;
-    private Data data;
+
 }
